@@ -1,0 +1,37 @@
+ - stage: lint
+      os: linux
+      dist: bionic
+      go: 1.17.x
+      go: 1.18.x
+      env:
+        - lint
+      git:
+@@ -31,7 +31,7 @@ jobs:
+      os: linux
+      arch: amd64
+      dist: bionic
+      go: 1.17.x
+      go: 1.18.x
+      env:
+        - docker
+      services:
+@@ -48,7 +48,7 @@ jobs:
+      os: linux
+      arch: arm64
+      dist: bionic
+      go: 1.17.x
+      go: 1.18.x
+      env:
+        - docker
+      services:
+@@ -65,7 +65,7 @@ jobs:
+      if: type = push
+      os: linux
+      dist: bionic
+      go: 1.17.x
+      go: 1.18.x
+      env:
+        - ubuntu-ppa
+        - GO111MODULE=on
+@@ -90,7 +90,7 @@ jobs:
+      os: linux
